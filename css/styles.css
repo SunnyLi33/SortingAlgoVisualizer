@@ -1,0 +1,36 @@
+/* Styling for the number boxes */
+.number-box {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgb(245, 245, 245);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Highlight style for the currently compared boxes */
+.highlight {
+    background-color: orange;
+}
+
+/* Style for the sorted boxes */
+.sorted {
+    background-color: lightgreen;
+}
+
+/*CSS for quick sort specifically*/
+.number-box.pivot {
+    background-color: orange; 
+}
+
+.number-box.partition {
+    background-color: yellow; 
+}
+
+.number-box.highlight {
+    background-color: lightblue; 
+}
+
+.number-box.sorted {
+    background-color: lightgreen; 
+}
