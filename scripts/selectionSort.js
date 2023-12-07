@@ -3,6 +3,7 @@ let comparisonCount1 = 0;
 function finalizeSorting(delay) {
     setTimeout(() => {
         document.getElementById('sortbtn').disabled = false;
+        document.getElementById('myDropDownExamples').disabled = false; 
         document.getElementById('sortingInfoArea').value = 'Total Comparisons: ' + comparisonCount1;
     }, delay);
 }
@@ -36,13 +37,13 @@ function selectionSort(numbers, boxes) {
     for (let i = 0; i < n - 1; i++) {
         let minIdx = i;
         updateVisual(boxes, minIdx, 'red', delay); 
-        delay += 500;
+        delay += 200;
 
         for (let j = i; j < n; j++) {
             comparisonCount1++; 
             if (j !== minIdx) { 
                 updateVisual(boxes, j, 'cyan', delay); 
-                delay += 500;
+                delay += 200;
             }
 
             if (numbers[j] < numbers[minIdx]) {
@@ -64,18 +65,18 @@ function selectionSort(numbers, boxes) {
             numbers[minIdx] = temp;
 
             swapBoxes(boxes, i, minIdx, delay);
-            delay += 500;
+            delay += 200;
         }
 
         updateVisual(boxes, i, 'lightgreen', delay); 
         if (minIdx !== i) {
             updateVisual(boxes, minIdx, 'white', delay); 
         }
-        delay += 500;
+        delay += 200;
     }
 
     updateVisual(boxes, n - 1, 'lightgreen', delay); 
-    finalizeSorting(delay + 500);
+    finalizeSorting(delay + 200);
 }
 
 

@@ -7,25 +7,25 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/indexStyles.css">
 </head>
-<bod>
+<body>
     <h1>Sorting Visualizer</h1>
     <div class="form-container">
         <textarea id="user_nums_input" rows="15" cols="50" placeholder="Input numbers in here..."></textarea><br>
         <div class="options-container">
-            <div>
-                <select id="myDropdownExamples">
-                    <option>--examples--</option>
+            <div id="myDropdownBars">
+                <select id="myDropDownExamples">
+                    <option>Examples</option>
                     <option value="option1">Example 1 (random numbers)</option>
                     <option value="option2">Example 2 (ordered)</option>
                     <option value="option3">Example 3 (reversed order)</option>
                 </select>
                 <select id="myDropDownAlgorithms">
-                    <option value="bubblesort">Buble Sort</option>
+                    <option value="bubblesort">Bubble Sort</option>
                     <option value="selectionsort">Selection Sort</option>
                     <option value="quicksort">Quick Sort</option>
                 </select>
             </div>
-            <textarea id="sortingInfoArea" rows="10" cols="41" readonly></textarea>
+            <textarea id="sortingInfoArea" rows="10" cols="43" readonly></textarea>
             <button id="sortbtn">Sort!</button>
         </div>
     </div>
@@ -34,4 +34,4 @@
     <script src="scripts/bubbleSort.js"></script>
     <script src="scripts/selectionSort.js"></script>
     <script src="scripts/quickSort.js"></script>
-</bod>
+</body>

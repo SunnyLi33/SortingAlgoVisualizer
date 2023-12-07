@@ -15,6 +15,8 @@ async function quickSortAndDisplay() {
     // Final update after sorting is complete
     updateUI(numbers, -1, -1, -1, true); 
     document.getElementById('sortingInfoArea').value += `Total Comparisons: ${comparisonCount2}`;
+
+    document.getElementById('myDropDownExamples').disabled = false;
 }
 
 async function quickSort(arr, left, right) {

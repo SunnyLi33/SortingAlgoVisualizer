@@ -79,7 +79,7 @@ function generateDescendingNumbers() {
 
 
 function init() {
-    document.getElementById('myDropdownExamples').addEventListener('change', function() {
+    document.getElementById('myDropDownExamples').addEventListener('change', function() {
         if (this.value === 'option1') {
             generateAndDisplayRandomNumbers();
         } else if (this.value === 'option2') { 

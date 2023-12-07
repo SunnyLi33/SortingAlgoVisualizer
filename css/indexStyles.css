@@ -24,7 +24,7 @@ h1 {
 .form-container {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     margin-top: 20px;
 }
 
@@ -38,22 +38,22 @@ h1 {
 /* Styling for text areas */
 textarea {
     padding: 10px;
-    border: 2px solid #e0e0e0;
     border-radius: 4px;
     font-size: 14px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     resize: none;
-    margin-top: 10px;
+    border-color: #007bff;
 }
 
 /* Styling for select elements */
 select {
     padding: 10px;
-    margin-top: 10px;
-    border: 2px solid #e0e0e0;
-    border-radius: 4px;
-    font-size: 14px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    background-color: white;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+    border-color: #007bff;
 }
 
 /* Button styling */
@@ -65,7 +65,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    margin-top: 20px;
+    margin-top: 15px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     transition: background-color 0.3s;
     align-self: flex-start;
@@ -90,4 +90,13 @@ button:hover {
     border-radius: 4px;
     background-color: #f9f9f9;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#sortingInfoArea {
+    margin-top: 10px;
+    width: fit-content;
+}
+
+#myDropDownAlgorithms {
+    width: auto;
 }
