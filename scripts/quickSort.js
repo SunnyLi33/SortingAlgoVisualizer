@@ -17,6 +17,7 @@ async function quickSortAndDisplay() {
     document.getElementById('sortingInfoArea').value += `Total Comparisons: ${comparisonCount2}`;
 
     document.getElementById('myDropDownExamples').disabled = false;
+    document.getElementById('user_nums_input').readOnly = false;
 }
 
 async function quickSort(arr, left, right) {

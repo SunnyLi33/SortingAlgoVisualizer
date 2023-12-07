@@ -29,6 +29,7 @@ function fullBubbleSort(endIndex, numbers, boxes) {
     if (endIndex <= 0) {
         document.getElementById('sortbtn').disabled = false;
         document.getElementById('myDropDownExamples').disabled = false;
+        document.getElementById('user_nums_input').readOnly = false;
         document.getElementById('sortingInfoArea').value = 'Total Comparisons: ' + comparisonCount;
         return;
     }
@@ -99,6 +100,7 @@ function updateVisual(boxes, index, color, delay) {
 function init() {
     document.getElementById('sortbtn').addEventListener('click', function() {
         let selectedAlgorithm = document.getElementById('myDropDownAlgorithms').value;
+        document.getElementById('user_nums_input').readOnly = true;
         document.getElementById('sortbtn').disabled = true;
         document.getElementById('myDropDownExamples').disabled = true;
         if (selectedAlgorithm === 'bubblesort') {

@@ -3,7 +3,8 @@ let comparisonCount1 = 0;
 function finalizeSorting(delay) {
     setTimeout(() => {
         document.getElementById('sortbtn').disabled = false;
-        document.getElementById('myDropDownExamples').disabled = false; 
+        document.getElementById('myDropDownExamples').disabled = false;
+        document.getElementById('user_nums_input').readOnly = false; 
         document.getElementById('sortingInfoArea').value = 'Total Comparisons: ' + comparisonCount1;
     }, delay);
 }
